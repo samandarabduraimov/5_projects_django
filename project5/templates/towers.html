@@ -1,0 +1,11 @@
+<title>Towers</title>
+
+<h1>Towers</h1><br>
+
+
+<body>
+{% for towers in towers %}
+    <a href="{% url 'detail' towers.pk %}" >{{ towers.name }}</a><hr>
+{% endfor %}
+
+</body>
